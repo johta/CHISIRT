@@ -55,8 +55,8 @@ def generateFrontCard():
         draw.rectangle((620, 10, 698, 90), fill=(255, 255, 255) ,outline=(0,0,0)) #Cost
         draw.rectangle((40, 110, 668, 500), fill=(255, 255, 255) ,outline=(0,0,0)) #illust
         draw.multiline_text((280, 260), "illust", fill=(0, 0, 0), font=font_big)
-        draw.rectangle((40, 520, 668, 900), fill=(255, 255, 255) ,outline=(0,0,0))#description
-        draw.rectangle((40, 920, 668, 1000), fill=(255, 255, 255) ,outline=(0,0,0))#flavor text
+        draw.rectangle((40, 520, 668, 850), fill=(255, 255, 255) ,outline=(0,0,0))#description
+        draw.rectangle((40, 870, 668, 1015), fill=(255, 255, 255) ,outline=(0,0,0))#flavor text
 
 
         draw.multiline_text((30, 30), id, fill=(0, 0, 0), font=font)
@@ -74,7 +74,7 @@ def generateFrontCard():
         line_counter = 0  # 行数のカウンター
         for line in wrap_list:  # wrap_listから1行づつ取り出しlineに代入
             y = line_counter*70+80  # y座標をline_counterに応じて下げる
-            draw.multiline_text((50, y+550),line, fill=(0,0,0), font=font)  # 1行分の文字列を画像に描画
+            draw.multiline_text((50, y+450),line, fill=(0,0,0), font=font)  # 1行分の文字列を画像に描画
             line_counter = line_counter +1  # 行数のカウンターに1
 
         draw.multiline_text((640, 30), str(cost), fill=(0, 0, 0), font=font)
@@ -84,7 +84,7 @@ def generateFrontCard():
         line_counter = 0  # 行数のカウンター
         for line in wrap_list:  # wrap_listから1行づつ取り出しlineに代入
             y = line_counter*35+80  # y座標をline_counterに応じて下げる
-            draw.multiline_text((50, y+850),line, fill=(0,0,0), font=font_small)  # 1行分の文字列を画像に描画
+            draw.multiline_text((50, y+800),line, fill=(0,0,0), font=font_small)  # 1行分の文字列を画像に描画
             line_counter = line_counter +1  # 行数のカウンターに1
 
         #確認用
