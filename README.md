@@ -4,8 +4,9 @@
 Excel2Cardです。Excelのリストからカードゲーム用のカードを自動生成します。
 
 こんなかんじ↓↓↓
+![figure](figure.png)
 
-![figure](figure1.png)
+
 
 
 
