@@ -5,11 +5,8 @@ Excel2Cardです。Excelのリストからカードゲーム用のカードを�
 
 こんなかんじ↓↓↓
 
-![excel](ss1.png)
+![figure](figure1.png)
 
-↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
-
-![card](card1.jpg)
 
 
 ## 事前準備
