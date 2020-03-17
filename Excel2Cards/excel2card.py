@@ -42,7 +42,7 @@ def generateFrontCard():
 
         color = setColor(dayOfWeek)
 
-        print(id+","+title+","+description+","+flavor+","+dayOfWeek+","+str(color))
+        # print(id+","+title+","+description+","+flavor+","+dayOfWeek+","+str(color))
 
         im = Image.new("RGB",(708,1033),color)
         draw = ImageDraw.Draw(im)
@@ -55,7 +55,6 @@ def generateFrontCard():
         draw.multiline_text((280, 260), "illust", fill=(0, 0, 0), font=font_big)
         draw.rectangle((40, 520, 668, 850), fill=(255, 255, 255) ,outline=(0,0,0))#description
         draw.rectangle((40, 870, 668, 1015), fill=(255, 255, 255) ,outline=(0,0,0))#flavor text
-
 
         draw.multiline_text((30, 30), id, fill=(0, 0, 0), font=font)
 
