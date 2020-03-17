@@ -14,8 +14,9 @@ Excel2Cardです。Excelのリストからカードゲーム用のカードを�
 
 - ディレクトリの作成
 
-  `mkdir front
-   mkdir rear `
+  `mkdir front`
+
+  `mkdir rear `
 
 ## 使い方
 1. Excelのファイル名・シート名を[cardsheet.xlsx][sheet1]に書き換えます
@@ -23,7 +24,7 @@ Excel2Cardです。Excelのリストからカードゲーム用のカードを�
 
   `python excel2card.py`
 
-3. /front /rear ディレクトリ配下にカードが生成されます
+3. /front および /rear ディレクトリ配下にカードが生成されます
 
 ## 動作確認環境
 - Python：3.7.3
