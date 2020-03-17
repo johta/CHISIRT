@@ -5,6 +5,7 @@ import os
 
 
 font = ImageFont.truetype('/Library/Fonts/ヒラギノ角ゴシック W0.ttc', 30)
+font_big = ImageFont.truetype('/Library/Fonts/ヒラギノ角ゴシック W0.ttc', 60)
 font_small = ImageFont.truetype('/Library/Fonts/ヒラギノ角ゴシック W0.ttc', 20)
 
 
@@ -29,7 +30,7 @@ def drawCard():
     workbook = openpyxl.load_workbook('cardsheet.xlsx')
     sheet = workbook["Sheet1"]
 
-    for i in range(2,30):
+    for i in range(2,99):
         card_num = "card_"+str(i)
         # print(card_num)
 
@@ -42,7 +43,7 @@ def drawCard():
 
         color = setColor(dayOfWeek)
 
-        print(dayOfWeek+","+str(color))
+        print(id+","+title+","+dayOfWeek+","+str(color))
 
         im = Image.new("RGB",(708,1033),color)
         draw = ImageDraw.Draw(im)
@@ -52,6 +53,7 @@ def drawCard():
         draw.rectangle((110, 10, 610, 90), fill=(255, 255, 255) ,outline=(0,0,0)) #Title
         draw.rectangle((620, 10, 698, 90), fill=(255, 255, 255) ,outline=(0,0,0)) #Cost
         draw.rectangle((40, 110, 668, 500), fill=(255, 255, 255) ,outline=(0,0,0)) #illust
+        draw.multiline_text((280, 260), "illust", fill=(0, 0, 0), font=font_big)
         draw.rectangle((40, 520, 668, 900), fill=(255, 255, 255) ,outline=(0,0,0))#description
         draw.rectangle((40, 920, 668, 1000), fill=(255, 255, 255) ,outline=(0,0,0))#flavor text
 
@@ -89,8 +91,8 @@ def drawCard():
         im.show()
 
         #でかすぎるのでリサイズ
-#        im_resize = im.resize((int(im.width*0.48), int(im.height*0.48)),Image.LANCZOS)
-#        im_resize.save('card/'+id+'.jpg', quality=95)
+        im_resize = im.resize((int(im.width*0.48), int(im.height*0.48)),Image.LANCZOS)
+        im_resize.save('card/'+id+'.jpg', quality=95)
 
 if __name__ == '__main__':
     drawCard()
