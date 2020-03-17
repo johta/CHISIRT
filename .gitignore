@@ -1,9 +1,7 @@
 .DS_Store
-
 .gitignore
-/front/
-/rear/
-/card/
+Excel2Cards/front/
+Excel2Cards/rear/
 cardsheet.xlsx
 ~$cardsheet.xlsx
 
