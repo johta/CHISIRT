@@ -1,5 +1,6 @@
 .gitignore
-
+/front/
+/rear/
 /card/
 cardsheet.xlsx
 ~$cardsheet.xlsx

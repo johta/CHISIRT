@@ -7,9 +7,6 @@ Excel2Cardです。Excelのリストからカードゲーム用のカードを�
 ![figure](figure.png)
 
 
-
-
-
 ## 事前準備
 - 必要なライブラリのインストール
 
