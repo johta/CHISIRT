@@ -4,16 +4,15 @@
 Excel2Cardです。Excelのリストからカードゲーム用のカードを自動生成します。
 
 こんなかんじ↓↓↓
+![figure](figure.png)
 
 
 ## 事前準備
 - 必要なライブラリのインストール
 
-  `pip install openpyxl
-   pip install Pillow
-   pip install textwrap  `
+  `pip install openpyx,lPillow,textwrap `
 
-  - ディレクトリの作成
+- ディレクトリの作成
 
   `mkdir front
    mkdir rear `
@@ -24,7 +23,7 @@ Excel2Cardです。Excelのリストからカードゲーム用のカードを�
 
   `python excel2card.py`
 
-3. /front , /rear ディレクトリ配下にjpeg形式でカードが生成されます
+3. /front /rear ディレクトリ配下にカードが生成されます
 
 ## 動作確認環境
 - Python：3.7.3
