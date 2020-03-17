@@ -12,19 +12,25 @@ Excel2Cardです。Excelのリストからカードゲーム用のカードを�
 ![card](card1.jpg)
 
 
+## 事前準備
+- 必要なライブラリのインストール
 
-## 使い方
-1. Excelのファイル名・シート名を[cardsheet.xlsx][sheet1]に書き換えます。
-2. [card]ディレクトリを作成します。
+  `pip install openpyxl,Pillow,textwrap  `
+- [card]ディレクトリの作成
 
   `mkdir card`
 
-3. excel2card.pyを動かします
+## 使い方
+1. Excelのファイル名・シート名を[cardsheet.xlsx][sheet1]に書き換えます
+2. excel2card.pyを動かします
 
   `python excel2card.py`
 
-4. /card ディレクトリ配下にカードが生成されます。
-5. うれしい！
+3. /card ディレクトリ配下にカードが生成されます
+
+## 動作確認環境
+- Python：3.7.3
+- OS:macOS Catalina
 
 ## 注意
 - ExcelファイルのフォーマットはCHISIRTカードゲームプロジェクトで使っているものに準拠しています。（持っていることが前提です）
