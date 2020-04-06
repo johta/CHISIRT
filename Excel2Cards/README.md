@@ -10,13 +10,12 @@ Excel2Cardです。Excelのリストからカードゲーム用のカードを�
 ## 事前準備
 - 必要なライブラリのインストール
 
-  `pip install openpyx,lPillow,textwrap `
+  `pip install openpyxl,Pillow,textwrap  #一個ずつインストール`
 
 - ディレクトリの作成
 
-  `mkdir front`
+  `mkdir front,rear`
 
-  `mkdir rear `
 
 ## 使い方
 1. Excelのファイル名・シート名を[cardsheet.xlsx][sheet1]に書き換えます
