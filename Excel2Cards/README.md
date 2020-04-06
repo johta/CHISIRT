@@ -10,7 +10,7 @@ Excel2Cardです。Excelのリストからカードゲーム用のカードを�
 ## 事前準備
 - 必要なライブラリのインストール
 
-  `pip install openpyxl,Pillow,textwrap  #一個ずつインストール`
+  `pip install openpyxl　Pillow　textwrap3 `
 
 - ディレクトリの作成
 
