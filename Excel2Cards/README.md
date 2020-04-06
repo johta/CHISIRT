@@ -14,7 +14,7 @@ Excel2Cardです。Excelのリストからカードゲーム用のカードを�
 
 - ディレクトリの作成
 
-  `mkdir front,rear`
+  `mkdir front/ rear/`
 
 
 ## 使い方
