@@ -18,8 +18,9 @@ Excel2Cardです。Excelのリストからカードゲーム用のカードを�
 
 
 ## 使い方
-1. Excelのファイル名・シート名を[cardsheet.xlsx][sheet1]に書き換えます
-2. excel2card.pyを動かします
+1. Excelのファイル名・シート名を[cardsheet.xlsx][sheet1]に変更します。
+2. 不要な行・列を削除してください。
+3. excel2card.pyを動かします。
 
   `python excel2card.py`
 
@@ -30,5 +31,6 @@ Excel2Cardです。Excelのリストからカードゲーム用のカードを�
 - OS:macOS Catalina
 
 ## 注意
-- ExcelファイルのフォーマットはCHISIRTカードゲームプロジェクトで使っているものに準拠しています。（持っていることが前提です）
+- ExcelファイルのフォーマットはCHISIRTカードゲームプロジェクトで使っているものに準拠しています。（持っていることが前提です。秘密のため上げません。）
 - カードフォーマットは[調整中]です。
+- anaconda環境だとpipとケンカしてうまく動かないかもしれません。
