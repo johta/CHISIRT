@@ -18,9 +18,10 @@ Excel2Cardです。Excelのリストからカードゲーム用のカードを�
 
 
 ## 使い方
-1. Excelのファイル名・シート名を[cardsheet.xlsx][sheet1]に変更します。
+1. Excelのファイル名・シート名を[cardsheet.xlsx][sheet1]に変更してExcel2Cards直下（excel2card.pyと同じディレクトリ）に置きます。
 2. 不要な行・列を削除してください（上図参照）。
 3. excel2card.pyを動かします。
+
 
   `python excel2card.py`
 
