@@ -3,6 +3,8 @@ from PIL import Image,ImageDraw,ImageFont
 import textwrap
 import os
 
+#実行時設定 Trueだと確認のみ。Falseだとカードを生成する。
+flag_view=True
 
 #カード枚数
 num = 36
@@ -93,13 +95,16 @@ def generateFrontCard():
         #     draw.multiline_text((50, y+800),line, fill=(0,0,0), font=font_small)  # 1行分の文字列を画像に描画
         #     line_counter = line_counter +1  # 行数のカウンターに1
 
-        # 確認用
-        # im.show()
+        if flag_view==True:
+            # 確認用
+            im.show()
+            # print("flag_view is "+str(flag_view))
 
-        #でかすぎるのでリサイズ　*LANCZOSなら劣化少なく縮小できるらしい
-        im_resize = im.resize((int(im.width*0.48), int(im.height*0.48)),Image.LANCZOS)
-        im_resize.save('front/'+id+'.jpg', quality=95)
-
+        else :
+            #でかすぎるのでリサイズ　*LANCZOSなら劣化少なく縮小できるらしい
+            im_resize = im.resize((int(im.width*0.48), int(im.height*0.48)),Image.LANCZOS)
+            im_resize.save('front/'+id+'.jpg', quality=95)
+            # print("flag_view is "+str(flag_view))
     print("done!")
 
 #エクセルを読み込んで裏面を生成する関数
@@ -160,12 +165,16 @@ def generateRearCard():
             draw.multiline_text((50, y+750),line, fill=(0,0,0), font=font_small)  # 1行分の文字列を画像に描画
             line_counter = line_counter +1  # 行数のカウンターに1
 
-        #確認用
-        # im.show()
-
-        #でかすぎるのでリサイズ
-        im_resize = im.resize((int(im.width*0.48), int(im.height*0.48)),Image.LANCZOS)
-        im_resize.save('rear/'+id+'.jpg', quality=95)
+        if flag_view==True:
+            # 確認用
+            # print("flag_view is "+str(flag_view))
+            im.show()
+        else :
+            #でかすぎるのでリサイズ　*LANCZOSなら劣化少なく縮小できるらしい
+            im_resize = im.resize((int(im.width*0.48), int(im.height*0.48)),Image.LANCZOS)
+            im_resize.save('front/'+id+'.jpg', quality=95)
+            # 確認用
+            # print("flag_view is "+str(flag_view))
 
     print("done!")
 
