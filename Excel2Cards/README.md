@@ -2,7 +2,7 @@
 
 ## これはなに
 Excel2Cardです。Excelのリストからカードゲーム用のカードを自動生成します。こんなかんじ↓↓↓
-![figure](figure1.png)
+![figure1](figure1.png)
 
 
 以下の機能に対応しています。
@@ -28,9 +28,15 @@ Excel2Cardです。Excelのリストからカードゲーム用のカードを�
 
 
 ## 使い方
+### 下処理
 1. Excelのファイル名・シート名を[cardsheet.xlsx][sheet1]に変更してExcel2Cards直下（excel2card.pyと同じディレクトリ）に置きます。
 2. 不要な行・列を削除してください（上図参照）。
-3. excel2card.pyを動かします。
+
+### 実行
+1. excel2card.pyを動かします。
+
+　　※7行目のflag_viewの値を指定するとカードの生成・確認のみを切り替えできます。
+
 
 
   `python excel2card.py`
