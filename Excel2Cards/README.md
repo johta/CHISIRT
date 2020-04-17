@@ -20,7 +20,7 @@ Excel2Cardです。Excelのリストからカードゲーム用のカードを�
 ## 事前準備
 - 必要なライブラリのインストール
 
-  `pip install openpyxl　Pillow　textwrap3 `
+  `pip3 install openpyxl Pillow textwrap3 `
 
 - ディレクトリの作成
 
@@ -35,13 +35,12 @@ Excel2Cardです。Excelのリストからカードゲーム用のカードを�
 ### 実行
 1. excel2card.pyを動かします。
 
+  `python excel2card.py`
+
 　　※7行目のflag_viewの値を指定するとカードの生成・確認のみを切り替えできます。
 
 
-
-  `python excel2card.py`
-
-3. /front および /rear ディレクトリ配下にカードが生成されます
+2. /front および /rear ディレクトリ配下にカードが生成されます
 
 ## 動作確認環境
 - Python：3.7.3
